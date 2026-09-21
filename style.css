@@ -1,0 +1,49 @@
+body{
+    font-family: Figtree !important;
+    background-color: white !important;
+}
+
+:not(table, tbody, thead, tfoot, tr, td, th){
+    border-radius: 15px !important;
+}
+
+
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+@media print {
+    /* Hide things that should not appear in the PDF */
+    .btn,
+    .modal,
+    .toast-container, .pdf-hide {
+        display: none !important;
+    }
+
+    /* Remove unnecessary page spacing */
+    body {
+        background: white !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Make the contact table print cleanly */
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .card-header {
+        color: black !important;
+        background: white !important;
+        border-bottom: 2px solid black !important;
+    }
+
+    .table-dark {
+        display: none !important;
+    }
+}
