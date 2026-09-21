@@ -7,7 +7,7 @@ This project allows users to add, view, edit, and delete contacts through a clea
 
 * ➕ Add new contacts
 * 📋 View all saved contacts
-* ✏️ Edit contact information (WIP)
+* ✏️ Edit contact information
 * 🗑️ Delete individual contacts
 * 🧹 Delete all contacts
 * 📄 Download the contact list as a PDF

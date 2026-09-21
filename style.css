@@ -1,49 +1,84 @@
-body{
+body {
     font-family: Figtree !important;
     background-color: white !important;
 }
 
-:not(table, tbody, thead, tfoot, tr, td, th){
+
+:not(table, tbody, thead, tfoot, tr, td, th, .card-header) {
     border-radius: 15px !important;
 }
 
 
-a{
+a {
     text-decoration: none !important;
     cursor: pointer;
 }
 
+
+/* ============================================
+   PDF / PRINT
+   ============================================ */
+
 @media print {
-    /* Hide things that should not appear in the PDF */
+
+    /* Hide buttons and unnecessary elements */
+
     .btn,
     .modal,
-    .toast-container, .pdf-hide {
+    .toast-container,
+    .pdf-hide {
+
         display: none !important;
+
     }
 
-    /* Remove unnecessary page spacing */
+
+    /* White background */
+
     body {
+
         background: white !important;
+
     }
+
+
+    /* Full width */
 
     .container {
+
         width: 100% !important;
         max-width: 100% !important;
+
     }
 
-    /* Make the contact table print cleanly */
+
+    /* Remove card styling */
+
     .card {
+
         border: none !important;
         box-shadow: none !important;
+
     }
 
+
+    /* Card header */
+
     .card-header {
+
         color: black !important;
         background: white !important;
         border-bottom: 2px solid black !important;
+
     }
 
+
+    /* Hide dark total card when printing */
+
     .table-dark {
+
         display: none !important;
+
     }
+
 }
